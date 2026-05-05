@@ -2,6 +2,10 @@ import streamlit as st
 import sqlite3
 import hashlib
 from datetime import datetime, date, timedelta
+import os
+
+if os.path.exists("campusshare.db"):
+    os.remove("campusshare.db")
 
 st.set_page_config(page_title="CampusShare", layout="wide")
 
