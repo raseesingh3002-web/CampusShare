@@ -327,7 +327,7 @@ def browse_items():
             st.write(f"**Value Level:** {item[5]}")
             st.write(f"**Deposit:** ₹{item[6]}")
             st.write(f"**Condition:** {item[7]}")
-            st.write(f"**Image Uploaded:** {item[8] if item[8] else 'No image'}")
+            st.image(f"**Image Uploaded:** {item[8] if item[8] else 'No image'}")
             st.write(f"**Status:** {item[9]}")
             st.write(f"**Owner:** {item[10]} | Hostel: {item[11]}")
 
